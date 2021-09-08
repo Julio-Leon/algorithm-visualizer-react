@@ -21,8 +21,11 @@ function App() {
 
   return (
     <div className="app flex-container">
-      <AppContext.Provider value={{setGrid}}>
-        <Grid grid={grid} setGrid={setGrid} />
+      <AppContext.Provider value={{
+          setGrid,
+          grid
+      }}>
+        <Grid grid={grid} />
       </AppContext.Provider>
     </div>
   );

@@ -8,7 +8,7 @@ function Grid(props) {
     return (
         <div className='grid flex-container'>
             {
-                props.grid.map((row, i) => <Row key={i} row={row} />)
+                props.grid.map((row, i) => <Row key={i} row={row} rowIdx={i} />)
             }
         </div>
     );

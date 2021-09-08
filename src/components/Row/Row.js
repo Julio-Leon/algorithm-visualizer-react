@@ -7,7 +7,7 @@ function Row(props) {
     return (
         <div className='row flex-container'>
             {
-                props.row.map((block, i) => <Block key={i} block={block} />)
+                props.row.map((block, i) => <Block key={i} block={block} rowIdx={props.rowIdx} blockIdx={i} />)
             }
         </div>
     );
