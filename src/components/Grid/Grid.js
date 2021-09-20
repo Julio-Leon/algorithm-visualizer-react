@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Grid.css';
 
 import Row from '../Row/Row';
+import { AppContext } from '../../App'
 
-function Grid(props) {
+function Grid() {
+
+    const appContext = useContext(AppContext)
 
     return (
         <div className='grid flex-container'>
             {
-                props.grid.map((row, i) => <Row key={i} row={row} rowIdx={i} />)
+                appContext.grid.map((row, i) => <Row key={i} row={row} rowIdx={i} />)
             }
         </div>
     );

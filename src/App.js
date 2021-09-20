@@ -25,7 +25,7 @@ function App() {
           setGrid,
           grid
       }}>
-        <Grid grid={grid} />
+        <Grid />
       </AppContext.Provider>
     </div>
   );
